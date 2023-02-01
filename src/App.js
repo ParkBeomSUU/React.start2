@@ -2,14 +2,14 @@ import React from "react";
 import Hello from "./Hello";
 import Wrapper from "./Wrapper";
 import Counter from "./Counter";
-
+import InputSample from "./InputSample";
 function App() {
   const name = "범수씨";
   const style = {
     backgroundColor: "black", //리액트는 - 안쓰고 카멜스타일로 해줘야함
     color: "aqua",
     fontSize: 24, // 기본 단위 px
-    padding: "1rem" // 다른 단위 사용 시 문자열로 설정
+    padding: "1rem", // 다른 단위 사용 시 문자열로 설정
   };
   return (
     <>
@@ -23,6 +23,7 @@ function App() {
         <Hello color="blue" />
       </Wrapper>
       <Counter />
+      <InputSample />
     </>
   );
 }
